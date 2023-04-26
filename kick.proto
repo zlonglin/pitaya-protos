@@ -5,8 +5,9 @@ package protos;
 option go_package = "./protos";
 
 message KickMsg {
-  string userId = 1;
-  bytes data = 2;
+  int64 sessionId = 1;
+  string userId = 2;
+  bytes data = 3;
 }
 
 message KickAnswer {
